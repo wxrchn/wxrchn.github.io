@@ -1,89 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>简洁美观的动态网页示例</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			background-color: #f2f2f2;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #333333;
-			color: #ffffff;
-			padding: 20px;
-			text-align: center;
-		}
-		nav {
-			background-color: #cccccc;
-			padding: 10px;
-			text-align: center;
-		}
-		nav a {
-			color: #333333;
-			font-size: 18px;
-			margin: 0 10px;
-			text-decoration: none;
-		}
-		nav a:hover {
-			background-color: #333333;
-			color: #ffffff;
-			padding: 5px 10px;
-			border-radius: 5px;
-			transition: all 0.2s ease-in-out;
-		}
-		main {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-		}
-		h1 {
-			color: #333333;
-			font-size: 36px;
-			margin-bottom: 20px;
-		}
-		p {
-			color: #666666;
-			font-size: 18px;
-			line-height: 1.5;
-			margin-bottom: 20px;
-		}
-		footer {
-			background-color: #333333;
-			color: #ffffff;
-			padding: 20px;
-			text-align: center;
-		}
-		.hidden {
-			display: none;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>动态网页</title>
+  <!-- 引入 Bootstrap 样式 -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-	<header>
-		<h1>简洁美观的动态网页示例</h1>
-	</header>
-	<nav>
-		<a href="#" class="active">首页</a>
-		<a href="#">关于我们</a>
-		<a href="#">联系我们</a>
-	</nav>
-	<main>
-		<h1>欢迎来到我们的网站</h1>
-		<p>这是一个简洁美观的动态网页示例，它展示了如何使用HTML、CSS和JavaScript创建动态效果。</p>
-		<img src="https://www.example.com/images/example.jpg" alt="示例图像">
-		<button id="hide-button">隐藏图像</button>
-	</main>
-	<footer>
-		<p>&copy; 2021 简洁美观的动态网页示例</p>
-	</footer>
-	<script>
-		const hideButton = document.getElementById("hide-button");
-		const image = document.querySelector("img");
-		hideButton.addEventListener("click", () => {
-			image.classList.toggle("hidden");
-		});
-	</script>
+  <div class="container">
+    <h1>欢迎来到我的动态网页</h1>
+    <p>这是一个简单的示例，展示了如何使用 HTML 和 Bootstrap 创建一个美观的动态网页。</p>
+    <img src="https://images.unsplash.com/photo-1633210333992-2ef6f2b6e3b3" alt="一张漂亮的图片">
+  </div>
+
+  <!-- 引入 Bootstrap JavaScript -->
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
