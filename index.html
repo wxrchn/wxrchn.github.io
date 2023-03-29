@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>我的静态网页</title>
+	<title>简洁美观的静态网页示例</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333333;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+		nav {
+			background-color: #cccccc;
+			padding: 10px;
+			text-align: center;
+		}
+		nav a {
+			color: #333333;
+			font-size: 18px;
+			margin: 0 10px;
+			text-decoration: none;
+		}
+		nav a:hover {
+			background-color: #333333;
+			color: #ffffff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			transition: all 0.2s ease-in-out;
+		}
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
 		}
 		h1 {
 			color: #333333;
-			text-align: center;
+			font-size: 36px;
+			margin-bottom: 20px;
 		}
 		p {
 			color: #666666;
@@ -17,17 +49,30 @@
 			line-height: 1.5;
 			margin-bottom: 20px;
 		}
-		img {
-			display: block;
-			margin: 0 auto;
-			max-width: 100%;
-			height: auto;
+		footer {
+			background-color: #333333;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<h1>欢迎来到我的静态网页</h1>
-	<p>这是一个简单的静态网页示例，它展示了如何使用HTML和CSS创建网页。</p>
-	<img src="https://www.example.com/images/example.jpg" alt="示例图像">
+	<header>
+		<h1>简洁美观的静态网页示例</h1>
+	</header>
+	<nav>
+		<a href="#">首页</a>
+		<a href="#">关于我们</a>
+		<a href="#">联系我们</a>
+	</nav>
+	<main>
+		<h1>欢迎来到我们的网站</h1>
+		<p>这是一个简洁美观的静态网页示例，它展示了如何使用HTML和CSS创建网页。</p>
+		<img src="https://www.example.com/images/example.jpg" alt="示例图像">
+	</main>
+	<footer>
+		<p>&copy; 2021 简洁美观的静态网页示例</p>
+	</footer>
 </body>
 </html>
