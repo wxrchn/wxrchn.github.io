@@ -1,0 +1,16 @@
+name: Keep Upstash Active
+
+on:
+  schedule:
+    # 每天执行一次（UTC 时间早上 0 点）
+    - cron: "0 0 * * *"
+  workflow_dispatch:  # 手动触发时也可执行
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keep Upstash Redis awake
+        run: |
+          curl -fsS https://https://in-foxhound-9876.upstash.io/ping \
+            -H "Authorization: Bearer ASaUAAImcDIyMzdjYmNhMDdlZjY0ZTQyYmZmNzQwZGE3ODAyMDVjM3AyOTg3Ng"
